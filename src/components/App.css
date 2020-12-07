@@ -1,0 +1,233 @@
+.content  {
+  background-color: black;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 7px;
+  z-index: 1
+}
+
+.content > div {
+  width: 20%;
+  padding-right: 8px
+}
+
+.content > div:first-child {
+  min-width: 220px
+}
+
+.content > div:nth-child(2) {
+  min-width: 200px
+}
+
+.content  div:nth-child(3) {
+  width: 40%
+}
+
+.content > div:last-child {
+  padding-right: 0;
+  min-width: 240px
+}
+
+@media (max-width:992px) {
+  .content {
+    display: block;
+    overflow-y: auto
+  }
+
+  .content > div {
+    width: 100%!important;
+    padding-right: 0;
+    padding-bottom: 8px
+  }
+}
+
+.vertical > div {
+  height: 100%;
+}
+
+.vertical-split {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding-top: 4px;
+}
+
+.vertical-split > div {
+  height: 50%
+}
+
+.vertical-split > div:first-child {
+  margin-bottom: 8px
+}
+
+.vertical-split:last-child > div:first-child {
+  height: 60%
+}
+
+.vertical-split:last-child > div:last-child {
+  height: 40%
+}
+
+@media (max-width:992px) {
+  .vertical-split {
+    display: block
+  }
+  .vertical-split > div,
+  .vertical-split > div:first-child {
+    height: auto
+  }
+}
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  font-size: 40px !important;
+}
+
+.nav-address {
+  padding-top: 2.5px;
+  color: white !important;
+}
+
+.card {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.card-header {
+  padding: 8px 4px;
+}
+
+.card-body{
+  flex: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 5px;
+}
+
+.card-body th {
+  border-top: 0;
+}
+
+.card-body .nav-tabs {
+  border-color: #95999c;
+}
+
+.card-body .nav-item.nav-link {
+  font-size: 80%;
+  font-weight: bold;
+  background-color: inherit;
+  color: inherit;
+  padding: 4px 8px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-color: #95999c;
+  border-radius: 0px;
+}
+
+.card-body .nav-item.nav-link.active {
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid #45b341;
+}
+
+.card-body .price-chart {
+  height:100%;
+  padding-bottom: 60px;
+}
+
+.card-link:hover {
+  color: black;
+}
+
+.card-body .price-chart .price {
+  padding-left: 20px;
+}
+
+td.cancel-order {
+  cursor: pointer;
+}
+
+tr.order-book-order {
+  cursor: pointer;
+}
+
+/* Custom styles */
+.navbar-custom {
+  background-color: rgb(32, 30, 30) !important;
+}
+
+.nav-link-custom {
+  color: #45b341 !important;
+}
+
+.card-custom {
+  border-radius: 5px !important;
+}
+
+.card-header-custom {
+  background-color: rgb(44, 44, 44) !important;
+}
+
+.card-body-custom {
+  background-color: rgb(59, 59, 59);
+}
+
+.spinner-custom {
+  position: absolute; 
+}
+
+.table-custom {
+  background-color: rgb(37, 36, 36) !important;
+  border-radius: 10px !important;
+  box-shadow: 2.5px 2.5px 2.5px 2.5px rgb(44, 44, 44) !important;
+}
+
+.balance-table-custom {
+  background-color: rgb(59, 59, 59);
+}
+
+.h4-custom {
+  /* text-align: center; */
+  font-weight: bold;
+}
+
+.button-custom {
+  background-color: rgb(28, 154, 168) !important;
+  font-weight: bold;
+}
+
+.button-buy {
+  background-color: #45b341 !important;
+  font-weight: bold;
+}
+
+.button-sell {
+  background-color: rgb(172, 25, 25) !important;
+  font-weight: bold;
+}
+
+.input-custom {
+  background-color: rgb(37, 36, 36) !important;
+  font-weight: bold;
+}
+
